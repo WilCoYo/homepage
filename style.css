@@ -1,0 +1,93 @@
+                                        /* Global Styling */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: .1rem solid red; */
+    
+}
+
+                                        /* Header Section */
+
+#icon-header-name {
+    color: #F3AC42;
+    background-color: orange;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem;
+}
+
+.header-button {
+    background-color: black;
+    color: white;
+    border-radius: .25rem;
+    padding: .25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+                                        /* Center Body Section */
+.full-body {
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+.main-body {
+    height: 100%;
+    text-align: center;
+  
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h4 {
+    color: #F3AC42;
+    font-size: 1.25rem;
+  }
+
+#cursor {
+color: #F3AC42;
+animation: blink 1s linear infinite;
+    }
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    }
+
+                                        /* Naviation Button Section*/
+
+.nav-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+}
+
+.nav-button button {
+    background-color: #F3AC42;
+    border-radius: 55%;
+    border: none;
+    padding: .5rem;
+}
+
+
