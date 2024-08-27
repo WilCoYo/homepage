@@ -3,11 +3,15 @@
 html {
     height: 100%;
     cursor:none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 body {
     min-height: 100%;
     cursor:none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 * {
@@ -86,9 +90,9 @@ animation: blink 1s linear infinite;
                                         /* Naviation Button Section*/
 
 .nav-button {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 18%;
 }
 
 .nav-button button {
@@ -96,11 +100,15 @@ animation: blink 1s linear infinite;
     border-radius: 55%;
     border: none;
     padding: .5rem;
+    
+}
+
+button:hover {
+    cursor: none;
 }
 
 
-
-
+                                        /* Cursor Styling */
 
 .cursor-dot,
 .cursor-dot-outline {
