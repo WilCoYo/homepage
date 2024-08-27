@@ -2,10 +2,12 @@
 
 html {
     height: 100%;
+    cursor:none;
 }
 
 body {
     min-height: 100%;
+    cursor:none;
 }
 
 * {
@@ -38,6 +40,10 @@ body {
     justify-content: space-between;
 }
 
+.header-button-text {
+    padding-left: .5rem;
+}
+
 
                                         /* Center Body Section */
 .full-body {
@@ -60,6 +66,8 @@ h4 {
     color: #F3AC42;
     font-size: 1.25rem;
   }
+
+                                        /* Typing Animation w/ Cursor */
 
 #cursor {
 color: #F3AC42;
@@ -91,3 +99,30 @@ animation: blink 1s linear infinite;
 }
 
 
+
+
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: .5rem;
+    height: .5rem;
+    background-color: #F3AC42;
+}
+
+.cursor-dot-outline {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(236, 188, 115, 0.5);
+}
