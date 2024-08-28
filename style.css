@@ -111,23 +111,23 @@ a::after {
                                         /* Width of underline effect */
 
 #nav1::after {
-    width:23%;
+    width:3.6rem;
 }
 
 #nav2::after {
-    width:34%;
+    width:5.4rem;
 }
 
 #nav3::after {
-    width:29%;
+    width:4.5rem;
 }
 
 #nav4::after {
-    width:29%;
+    width:4.6rem;
 }
 
 #nav5::after {
-    width:17%;
+    width:2.7rem;
 }
 
 
