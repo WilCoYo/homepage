@@ -78,9 +78,9 @@ body {
     padding-bottom: .75rem;
 }
 
-.nav-list li:hover {
+/* .nav-list li:hover {
     background-color: rgba(194, 194, 194, 0.562);
-}
+} */
 
 a {
     display: block;
@@ -254,6 +254,13 @@ animation: blink 1s linear infinite;
     height: 2.5rem;
     background-color: rgba(206, 205, 204, 0.5);
 }
+
+@media only screen and (min-width: 37.5rem) {
+    .nav-list li:hover {
+        background-color: rgba(194, 194, 194, 0.562);
+    }
+}
+
 
 
 @media only screen and (max-width: 37.5rem) {
