@@ -87,25 +87,7 @@ animation: blink 1s linear infinite;
     }
     }
 
-                                        /* Naviation Button Section*/
 
-.nav-button {
-    display: flex;
-    justify-content: center;
-    margin: 18%;
-}
-
-.nav-button button {
-    background-color: #F3AC42;
-    border-radius: 55%;
-    border: none;
-    padding: .5rem;
-    
-}
-
-button:hover {
-    cursor: none;
-}
 
 
                                         /* Cursor Styling */
