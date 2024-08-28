@@ -12,7 +12,6 @@ body {
     cursor:none;
     margin: 0;
     padding: 0;
-    background-color: grey;
 }
 
 * {
@@ -24,8 +23,8 @@ body {
                                         /* Header Section */
 
 #icon-header-name {
-    color: #F3AC42;
-    background-color: orange;
+    color: #7BB382;
+    background-color: #7BB382;
 }
 
 
@@ -33,12 +32,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     position: fixed;
-    top: .25rem;
+    top: .5rem;
 }
 
 
 
                                         /* Navigation Sidebar Sub-Section */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
 
 .sidebar-navigation {
     position: fixed;
@@ -59,6 +68,7 @@ body {
 
 .nav-list {
     height: 100%;
+    padding-left: 2rem;
     align-content: center;
 
 }
@@ -68,7 +78,7 @@ body {
 }
 
 .nav-list li {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -98,14 +108,14 @@ h1 {
 }
 
 h4 {
-    color: #F3AC42;
+    color: #7BB382;
     font-size: 1.25rem;
   }
 
                                         /* Typing Animation w/ Cursor */
 
 #cursor {
-color: #F3AC42;
+color: #7BB382;
 animation: blink 1s linear infinite;
     }
 
