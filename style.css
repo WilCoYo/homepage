@@ -133,7 +133,7 @@ body {
     font-size:2rem;
     text-align:center;
     text-decoration:none;
-    color:#404040;
+    color:#7BB382;
     margin: .5rem .75rem;
     padding: .25rem;
     transition:.5s;
@@ -146,7 +146,7 @@ body {
   .social-icons li a span:nth-child(3){
     width:100%;
     height:3px;
-    background:#404040;
+    background:#7BB382;
   }
   .social-icons li a span:nth-child(1) {
     top:0;
