@@ -82,7 +82,7 @@ body {
     background-color: rgba(194, 194, 194, 0.562);
 } */
 
-a {
+.nav-list a {
     display: block;
     position: relative;
     text-decoration: none;
@@ -97,7 +97,7 @@ a {
 
                                         /* Underline effect for Nav-bar */
 
-a::after {
+.nav-list a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -107,6 +107,119 @@ a::after {
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
   }
+
+
+                                         /* Social Media Icons */
+
+
+  .social-icons {
+    position:absolute;
+    bottom:0;
+    /* transform:translate(-50%,-50%); */
+    margin:0;
+    padding:0;
+    display:flex;
+    z-index: 1001;
+  }
+  .social-icons li {
+    list-style:none;
+  }
+  .social-icons li a {
+    display:block;
+    position:relative;
+    width:2rem;
+    height:2rem;
+    line-height:1.5rem;
+    font-size:2rem;
+    text-align:center;
+    text-decoration:none;
+    color:#404040;
+    margin: .5rem .75rem;
+    padding: .25rem;
+    transition:.5s;
+  }
+  .social-icons li a span {
+    position:absolute;
+    transition: transform .5s;
+  }
+  .social-icons li a span:nth-child(1),
+  .social-icons li a span:nth-child(3){
+    width:100%;
+    height:3px;
+    background:#404040;
+  }
+  .social-icons li a span:nth-child(1) {
+    top:0;
+    left:0;
+    transform-origin: right;
+  }
+  .social-icons li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:transform .5s;
+  }
+  
+  .social-icons li a span:nth-child(3) {
+    bottom:0;
+    left:0;
+    transform-origin: left;
+  }
+  .social-icons li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .5s;
+  }
+  
+  .social-icons li a span:nth-child(2),
+  .social-icons li a span:nth-child(4){
+    width:3px;
+    height:100%;
+    background:#404040;
+  }
+  .social-icons li a span:nth-child(2) {
+    top:0;
+    left:0;
+    transform:scale(0);
+    transform-origin: bottom;
+  }
+  .social-icons li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition:transform .5s;
+  }
+  .social-icons li a span:nth-child(4) {
+    top:0;
+    right:0;
+    transform:scale(0);
+    transform-origin: top;
+  }
+  .social-icons li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition:transform .5s;
+  }
+  
+.github:hover i { color: #000; }
+.github:hover span { background: #000 !important; }
+.twitter:hover i { color: #1da1f2; }
+.twitter:hover span { background: #1da1f2 !important; }
+.instagram:hover i { color: #c32aa3; }
+.instagram:hover span { background: #c32aa3 !important; }
+.linkedin:hover i { color: #2366C0; }
+.linkedin:hover span { background: #2366C0 !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                         /* Width of underline effect */
 
@@ -131,26 +244,26 @@ a::after {
 }
 
 
-  a:hover::after,
-  a:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-  }
-  
-  /* Slide in */
-  li a {
-    overflow: hidden;
-  }
-  
-  li a::after {
-    opacity: 1;
-    transform: translate3d(-150%, 0, 0);
-  }
-  
-  li a:hover::after,
-  li a:focus::after{
-    transform: translate3d(0, 0, 0);
-  }
+.nav-lista:hover::after,
+a:focus::after {
+opacity: 1;
+transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+.nav-list li a {
+overflow: hidden;
+}
+
+.nav-list li a::after {
+opacity: 1;
+transform: translate3d(-150%, 0, 0);
+}
+
+.nav-list li a:hover::after,
+.nav-list li a:focus::after{
+transform: translate3d(0, 0, 0);
+}
 
 
 
