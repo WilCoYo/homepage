@@ -15,7 +15,7 @@ body {
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins";
     /* outline: .1rem solid red; */
     
 }
@@ -23,13 +23,13 @@ body {
                                         /* Header Section */
 
 #icon-header-name {
-    color: #7BB382;
-    background-color: #7BB382;
+    color: #fff;
+    background-color: #fff;
 }
 
 
 .header-name {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins";
     font-size: 1.5rem;
     position: fixed;
     top: .5rem;
@@ -98,19 +98,47 @@ a:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 2rem;
+    /* padding: 2rem; */
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
     margin-bottom: 0;
+    transition: 0.5s;
+}
+
+h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    
 }
 
 h4 {
-    color: #7BB382;
+    color: #fff;
     font-size: 1.25rem;
   }
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
 
                                         /* Typing Animation w/ Cursor */
 
@@ -149,11 +177,11 @@ animation: blink 1s linear infinite;
 .cursor-dot {
     width: .5rem;
     height: .5rem;
-    background-color: #F3AC42;
+    background-color: #fff;
 }
 
 .cursor-dot-outline {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: rgba(236, 188, 115, 0.5);
+    background-color: rgba(206, 205, 204, 0.5);
 }
