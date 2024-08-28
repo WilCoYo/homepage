@@ -130,6 +130,8 @@ h4 {
 
 @media (min-aspect-ratio: 16/9) {
     .back-video {
+        overflow-y: auto;
+        overflow-x: auto;
         width: 100%;
         height: auto;
     }
@@ -137,6 +139,8 @@ h4 {
 
 @media (max-aspect-ratio: 16/9) {
     .back-video {
+        overflow-y: auto;
+        overflow-x: auto;
         width: auto;
         height: 100%;
     }
