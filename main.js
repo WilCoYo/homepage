@@ -187,3 +187,6 @@ function checkBoxes() {
 }
 window.addEventListener('scroll', checkBoxes);
 window.addEventListener('load', checkBoxes);
+
+
+
