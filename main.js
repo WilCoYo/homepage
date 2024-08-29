@@ -160,3 +160,30 @@ function sleep(ms) {
 }
 
 cursor.init();
+
+
+
+
+
+// Slide In Animations
+
+
+const slidingElements = document.querySelectorAll(".slideIn-animation");
+
+
+
+function checkBoxes() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+
+    slidingElements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom) {
+            el.classList.add('show');
+        } else {
+            el.classList.remove('show');
+        }
+    });
+}
+window.addEventListener('scroll', checkBoxes);
+window.addEventListener('load', checkBoxes);

@@ -12,6 +12,9 @@ body {
     cursor:none;
     margin: 0;
     padding: 0;
+
+    /* scroll animation */
+    overflow-x: hidden;
 }
 
 * {
@@ -346,7 +349,28 @@ h4:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
     border-radius: 50%;
     border: none;
+
+   
+
 }
+
+.slideIn-animation {
+     /* Scroll Animations */
+     transform: translateX(-100%);
+     transition: transform 0.4s ease;
+}
+
+#slideIn-animation:nth-of-type(even) {
+    transform: translateX(100%);
+}
+ 
+
+
+.slideIn-animation.show {
+    transform: translateX(0);
+}
+
+
 
 
 .about-me-right {
@@ -357,6 +381,9 @@ h4:hover {
     margin: 1rem;
     padding: 10rem;
 }
+
+
+
 
 
 
