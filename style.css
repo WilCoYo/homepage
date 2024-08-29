@@ -332,8 +332,9 @@ h4:hover {
 
 .about-me {
     display: grid;
-    grid-template-columns: 16rem .75fr 1.25fr;
+    grid-template-columns:.75fr 1.25fr;
     min-height: 100vh;
+    margin-left: 16rem;
 }
 
 .about-me-left {
@@ -379,7 +380,7 @@ h4:hover {
     align-content: center;
     align-self: center;
     margin: 1rem;
-    padding: 10rem;
+    padding: 5%;
 }
 
 
@@ -477,6 +478,9 @@ animation: blink 1s linear infinite;
 
 
 @media only screen and (max-width: 37.5rem) {
+
+
+
     .sidebar-navigation {
         position: fixed;
         top: 0;
@@ -575,6 +579,31 @@ animation: blink 1s linear infinite;
       .social-icons li a span:nth-child(4) {
         background-color: #fff;
       }
+
+    .about-me {
+        display: block;
+        min-height: 100vh;
+        margin: 10% auto;
+    }
+
+    .about-me-right {
+        margin: 5% 5% 0 5%;
+        padding: 0 5% 0 5%;
+    }
+
+    .about-me-right h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .self-portrait {
+        padding: 0;
+    }
+
+
+
+
+
 }
 
 @media (min-aspect-ratio: 16/9) {
