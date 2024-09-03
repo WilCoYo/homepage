@@ -770,7 +770,14 @@ animation: blink 1s linear infinite;
     }
 
 
-
+    .experience-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: 100vh;
+        gap: 1rem;
+        
+    }
 
 
 }
