@@ -218,3 +218,4 @@ window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
     background.style.opacity = 1 - scrollTop / 500;
 })
+
