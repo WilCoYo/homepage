@@ -376,12 +376,15 @@ h4:hover {
 
 
 .about-me-right {
-    height: 15rem;
     display:flexbox;
     align-content: center;
     align-self: center;
     margin: 1rem;
     padding: 5%;
+}
+
+.about-me-right p {
+    line-height: 2rem;
 }
 
 
