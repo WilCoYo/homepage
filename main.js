@@ -210,3 +210,11 @@ window.addEventListener("load", function() {
         document.body.removeChild(loader);
     });
 });
+
+
+
+window.addEventListener('scroll', function() {  
+    let background = document.getElementById("back-video");
+    let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
+    background.style.opacity = 1 - scrollTop / 500;
+})
