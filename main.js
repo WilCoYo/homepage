@@ -45,7 +45,7 @@ function sleep(ms) {
 
 
 
-// Cursor Functions 
+                                                        // Cursor Functions 
 
   var cursor = {
     delay: 8,
@@ -167,7 +167,7 @@ cursor.init();
 
 
 
-// Slide In Animations
+                                                // Slide In Animations
 
 
 const slidingElements = document.querySelectorAll(".slideIn-animation");
@@ -194,8 +194,19 @@ window.addEventListener('load', checkBoxes);
 
 
 
-// let loader = document.getElementById("preloader");
+                                                // Preloader Function
 
-// window.addEventListener("load", function(){
-//     loader.style.display = "none";
-// });
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        // Start the fade-out transition
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }, 2000);
+
+    // Optional: remove the preloader from DOM after transition
+    loader.addEventListener("transitionend", function() {
+        document.body.removeChild(loader);
+    });
+});
