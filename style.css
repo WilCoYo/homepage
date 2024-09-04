@@ -856,6 +856,14 @@ animation: blink 1s linear infinite;
         
     }
 
+    .experience-section {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 1rem;
+        overflow: auto;
+       
+    }
+
 
 }
 
