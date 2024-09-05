@@ -16,7 +16,9 @@ body {
 
     /* scroll animation */
     overflow-x: hidden;
-    z-index: -6;
+}
+
+#body {
 }
 
 * {
@@ -366,6 +368,7 @@ h4:hover {
     min-height: 100vh;
     margin-left: 16rem;
     z-index: 100;
+    overflow: hidden;
 }
 
 .about-me-left {
@@ -433,7 +436,7 @@ h4:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    overflow: auto;
+    overflow: hidden;
     margin-left: 16rem;
     margin-right: 2rem;
     justify-content: center;
