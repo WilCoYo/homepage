@@ -87,7 +87,7 @@ body {
 .nav-list {
     height: 100%;
     align-content: center;
-
+   
 }
 
 .nav-list ul {
@@ -247,7 +247,7 @@ body {
 }
 
 #nav3::after {
-    width:4.5rem;
+    width: 6rem;
 }
 
 #nav4::after {
@@ -255,7 +255,7 @@ body {
 }
 
 #nav5::after {
-    width:2.7rem;
+    width:4.7rem;
 }
 
 
@@ -365,12 +365,14 @@ h4:hover {
     grid-template-columns:.75fr 1.25fr;
     min-height: 100vh;
     margin-left: 16rem;
+    z-index: 100;
 }
 
 .about-me-left {
     display:flexbox;
     align-content: center;
     text-align: center;
+    z-index: 100;
 }
 
 
@@ -380,8 +382,7 @@ h4:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
     border-radius: 50%;
     border: none;
-
-   
+    z-index: 100;
 
 }
 
