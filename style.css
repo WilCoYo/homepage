@@ -874,6 +874,7 @@ animation: blink 1s linear infinite;
         display: block;
         min-height: 100vh;
         margin: 10% auto;
+        overflow: hidden;
     }
 
     .about-me-right {
@@ -894,7 +895,7 @@ animation: blink 1s linear infinite;
     .experience-section {
        display: block;
         height: 100vh;
-
+        overflow: hidden;
         
     }
 
