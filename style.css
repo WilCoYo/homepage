@@ -102,6 +102,7 @@ body {
     padding-left: .15;
     padding-top: .75rem;
     padding-bottom: .75rem;
+    
 }
 
 
@@ -116,6 +117,8 @@ body {
     padding-left: .5rem;
     
 }
+
+
 
 
                                         /* Underline effect for Nav-bar */
@@ -336,18 +339,7 @@ h4:hover {
     color: transparent;
 }
 
-.back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -5;
-    overflow-y: auto;
-    overflow-x: auto;
 
-
-
-    
-}
 
 #mobile {
     visibility: hidden;
@@ -720,7 +712,7 @@ h4:hover {
 
 
 
-#
+
 
 
 
@@ -739,12 +731,12 @@ animation: blink 1s linear infinite;
 
 @keyframes blink {
     0% {
-        opacity: 100%;
+        opacity: 1;
     }
     50% {
-        opacity: 0%;
+        opacity: 0;
     }
-    }
+}
 
 
 
@@ -765,9 +757,7 @@ animation: blink 1s linear infinite;
 
 
 @media only screen and (max-width: 37.5rem) {
-    body {
-        padding-top: 6rem; /* Add padding to account for fixed navbar */
-    }
+
 
 
     .sidebar-navigation {
@@ -777,14 +767,16 @@ animation: blink 1s linear infinite;
         width: 100%;
         height: auto; 
         min-height: 4rem; 
-        background-color: rgba(255, 255, 255, 0.9); 
+        background-color: rgba(255, 255, 255, 0.5);
         padding: 0.5rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         box-sizing: border-box;
         z-index: 1000;
     }
 
     .nav-list {
+        display: flex;
+        justify-content: center;
         padding: 0;
         width: 100%;
     }
@@ -794,15 +786,16 @@ animation: blink 1s linear infinite;
         display: flex; 
         justify-content: center; 
         flex-wrap: nowrap; 
-        padding: 0.5rem 0; /* Reduced padding */
+        padding: 4rem 0 0 0;
         margin: 0;
         list-style: none;
         font-weight: bold;
-        width: 100%; /* Changed from max-content to 100% */
+        width: max-content; 
+        
     }
     
     .nav-list li {
-        padding: 0.5rem;
+        padding: 0.5rem 1.25rem;
         text-align: center;
         flex: 1 1 auto; 
     }
@@ -811,13 +804,7 @@ animation: blink 1s linear infinite;
         display: grid;
         grid-template-columns: 1fr;
         min-height: 100vh;
-        padding-top: 1rem;
-    }
-
-    .hero-section,
-    .about-me,
-    .experience-section {
-        margin-top: 1rem;
+        padding-top: 5rem;
     }
 
     .hero-section {
@@ -847,12 +834,15 @@ animation: blink 1s linear infinite;
     }
 
     .social-icons {
-        position: fixed;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1001; /* Ensure it's above other content */
-    }
+        position:absolute;
+        bottom:0;
+        /* transform:translate(20%, 100%); */
+        margin:0;
+        padding:0;
+        display:flex;
+        z-index: 15;
+
+      }
 
       .social-icons li a {
         display:block;
@@ -880,7 +870,7 @@ animation: blink 1s linear infinite;
         display: block;
         min-height: 100vh;
         margin: 10% auto;
-        overflow: hidden;
+        padding-top: 9rem;
     }
 
     .about-me-right {
@@ -899,19 +889,16 @@ animation: blink 1s linear infinite;
 
 
     .experience-section {
-       display: block;
-        height: 100vh;
-        overflow: hidden;
-        
-    }
-
-
-    .experience-section {
         display: block;
+        
         margin: 0;
-        padding: 0;
+        padding: 9rem 0 0 0;
         width: 100%;
-    }
+    }    
+    
+
+
+  
 
 
     .skill-chart {
@@ -920,7 +907,25 @@ animation: blink 1s linear infinite;
         background-color: #ffffffe3;
         margin: 0;
         border-radius: 2rem;
-        padding: 1rem;
+        padding: 0;
+    }
+
+   
+    .skill-chart ul {
+        padding: 0;
+    }
+
+    .skills {
+        width: 100%;
+        padding: 0 2rem 0 0;
+    }
+
+    .skills li {
+        /* line-height: 1.5rem; */
+    }
+
+    .total-xp {
+        visibility: hidden;
     }
     
 
@@ -941,6 +946,7 @@ animation: blink 1s linear infinite;
         height: 100%;
     }
 }
+
 
 #preloader {
     background: #fff url(images/preloader.gif) no-repeat center center;
