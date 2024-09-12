@@ -148,6 +148,19 @@ body {
     transition: opacity 300ms, transform 300ms;
   }
 
+  .nav5::after {
+    content: 'Download' !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: .15rem;
+    height: 1.5rem !important;
+    color: white;
+    background-color: #4C5130;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+
 
                                          /* Social Media Icons */
 
@@ -274,7 +287,7 @@ body {
 }
 
 .nav5::after {
-    width:4.7rem;
+    width: 5.25rem;
 }
 
 
@@ -949,9 +962,7 @@ animation: blink 1s linear infinite;
         padding: 0 2rem 0 0;
     }
 
-    .skills li {
-        /* line-height: 1.5rem; */
-    }
+   
 
     .total-xp {
         visibility: hidden;
