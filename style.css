@@ -16,10 +16,10 @@ body {
 
     /* scroll animation */
     overflow-x: hidden;
+
+    background-color: #6c8bb3;
 }
 
-#body {
-}
 
 * {
     font-family: "Poppins";
@@ -99,7 +99,7 @@ body {
 }
 
 .nav-list li {
-    padding-left: .15;
+    padding-left: .15rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
     
@@ -114,20 +114,34 @@ body {
 }
 
 .nav-list a {
+    position: relative;
     padding-left: .5rem;
     
 }
 
+#nav1,
+#nav2,
+#nav3,
+#nav4,
+#nav5 {
+    display: none;
+}
 
+.desktop {
+    display: block;
+}
 
 
                                         /* Underline effect for Nav-bar */
+
+
 
 .nav-list a::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: .1rem;
+    left: 0;
+    margin: .15rem;
     height: 0.1em;
     background-color: #4C5130;
     opacity: 0;
@@ -243,23 +257,23 @@ body {
 
                                         /* Width of underline effect */
 
-#nav1::after {
+.nav1::after {
     width:3.6rem;
 }
 
-#nav2::after {
+.nav2::after {
     width:5.4rem;
 }
 
-#nav3::after {
+.nav3::after {
     width: 6rem;
 }
 
-#nav4::after {
+.nav4::after {
     width:4.6rem;
 }
 
-#nav5::after {
+.nav5::after {
     width:4.7rem;
 }
 
@@ -325,7 +339,7 @@ h1 {
 h1:hover {
     -webkit-text-stroke: 2px #fff;
     color: transparent;
-    
+    cursor: default;
 }
 
 h4 {
@@ -337,6 +351,7 @@ h4 {
 h4:hover {
     -webkit-text-stroke: 1px #000000;
     color: transparent;
+    cursor: default;
 }
 
 
@@ -774,9 +789,14 @@ animation: blink 1s linear infinite;
         z-index: 1000;
     }
 
+
+
+    .desktop {
+        display: none;
+    }
+
     .nav-list {
         display: flex;
-        justify-content: center;
         padding: 0;
         width: 100%;
     }
@@ -784,21 +804,28 @@ animation: blink 1s linear infinite;
   
     .nav-list ul {
         display: flex; 
-        justify-content: center; 
-        flex-wrap: nowrap; 
+        justify-content: space-evenly; 
+        width: 100%;
         padding: 4rem 0 0 0;
         margin: 0;
         list-style: none;
         font-weight: bold;
-        width: max-content; 
-        
     }
     
     .nav-list li {
-        padding: 0.5rem 1.25rem;
+        padding: 0;
         text-align: center;
-        flex: 1 1 auto; 
     }
+
+    #nav1, #nav2,
+    #nav3, #nav4,
+    #nav5 {
+    display: flex;
+    }
+
+
+
+    
 
     .landing-page {
         display: grid;
@@ -825,21 +852,14 @@ animation: blink 1s linear infinite;
         text-align: center;
     }
 
-    #desktop {
-        visibility: hidden;
-    }
-
-    #mobile {
-        visibility: visible;
-    }
-
+ 
     .social-icons {
         position:absolute;
         bottom:0;
         /* transform:translate(20%, 100%); */
         margin:0;
         padding:0;
-        display:flex;
+        display:flex !important;
         z-index: 15;
 
       }
