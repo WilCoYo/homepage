@@ -238,10 +238,10 @@ body {
     transition:transform .5s;
   }
   
-.github:hover i { color: #000; }
-.github:hover span { background: #000 !important; }
-.twitter:hover i { color: #1da1f2; }
-.twitter:hover span { background: #1da1f2 !important; }
+.github:hover i { color: #c9510c; }
+.github:hover span { background: #c9510c !important; }
+.twitter:hover i { color: #000; }
+.twitter:hover span { background: #000 !important; }
 .instagram:hover i { color: #c32aa3; }
 .instagram:hover span { background: #c32aa3 !important; }
 .linkedin:hover i { color: #2366C0; }
@@ -474,9 +474,8 @@ h4:hover {
 }
 
 .certifications {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    align-content:center;
+    display: flex;
+    
 }
 
 .certifications ul {
@@ -484,42 +483,55 @@ h4:hover {
 }
 
 .codecademy-logo {
-    width: 20%;
+    width: 55%;
+    margin-top: 1.95rem;
+}
+
+.codecademy-logo:hover {
+    scale: 1.1;
 }
 
 .codecademy-cert {
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
     
 }
 
-.codecademy-cert li {
-    list-style: none;
-}
+
+
+
 
 .americorps {
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
 }
 
-.americorps ul {
-    padding-right: .35rem;
-}
 
 .americorps li {
     text-align: start;
-    list-style: none;
+    
 }
 
+
+
 .nccc-logo {
-    width: 10%;
+    width: 15%;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.nccc-logo:hover {
+    scale: 1.2;
 }
 
 .cityyear-logo {
-    width: 10%;
-    height: 90%;
-    align-self: center;
+    width: 17%;
+    padding-left: 1rem;
 }
+
+.cityyear-logo:hover {
+    scale: 1.2;
+}
+
+
 
 
 
