@@ -16,8 +16,7 @@ body {
 
     /* scroll animation */
     overflow-x: hidden;
-
-    background-color: #6c8bb3;
+    
 }
 
 
@@ -25,6 +24,14 @@ body {
     font-family: "Poppins";
     /* outline: .1rem solid red; */
     
+}
+
+
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
 }
 
                                         /* Preloader Screen */
@@ -153,7 +160,9 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: .15rem;
+    margin: 0 !important;
+    padding-left: .35rem !important;
+    padding-right: .35rem !important;
     height: 1.5rem !important;
     color: white;
     background-color: #4C5130;
@@ -172,14 +181,26 @@ body {
     padding:.25rem;
     display:flex;
     z-index: 1001;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 3rem;
     box-shadow: 0 0 .25rem rgb(0, 0, 0);
+    animation: pulse 2s linear infinite;
   }
 
-  .social-icons:hover {
-    scale: 1.05;
-  }
+
+
+
+  @keyframes pulse {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.025;
+    }
+}
+
+
+
 
 
   .social-icons li {
@@ -510,10 +531,9 @@ h4:hover {
 .experience-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     overflow: hidden;
-    margin-left: 16rem;
-    margin-right: 2rem;
+    padding: 1rem;
+    margin-left: 12rem;
     justify-content: center;
    
 }
@@ -669,6 +689,7 @@ h4:hover {
     margin-top: 1rem auto;
     border-radius: 2rem;
     padding: 1rem;
+    box-shadow: 0px 0px 5px grey;
 }
 
 .skills-title {
@@ -1049,10 +1070,10 @@ animation: blink 1s linear infinite;
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 1005;
+    z-index: 1500;
 
 
     transition-property: display opacity;
-    transition: 1s;
+    transition: .5s;
     
 }

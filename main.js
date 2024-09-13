@@ -42,38 +42,6 @@ function sleep(ms) {
 
 
 
-
-
-                                                // Slide In Animations
-
-
-                                                //Slide In From Right
-
-
-// const slidingElements = document.querySelectorAll(".slideIn-animation");
-
-
-
-// function checkBoxes() {
-//     const triggerBottom = window.innerHeight / 5 * 4;
-
-//     slidingElements.forEach(el => {
-//         const boxTop = el.getBoundingClientRect().top;
-
-//         if(boxTop < triggerBottom) {
-//             el.classList.add('show');
-//         } else {
-//             el.classList.remove('show');
-//         }
-//     });
-// }
-// window.addEventListener('scroll', checkBoxes);
-// window.addEventListener('load', checkBoxes);
-
-
-
-
-
                                     // Slide In From Right and Left
 const slidingElementsRight = document.querySelectorAll(".slideIn-animation");
 const slidingElementsLeft = document.querySelectorAll(".slideIn-animation-left");
@@ -115,7 +83,7 @@ window.addEventListener("load", function() {
         // Start the fade-out transition
         loader.style.opacity = "0";
         loader.style.visibility = "hidden";
-    }, 2000);
+    }, 1000);
 
     // Optional: remove the preloader from DOM after transition
     loader.addEventListener("transitionend", function() {
@@ -123,11 +91,11 @@ window.addEventListener("load", function() {
     });
 });
 
+                                          // Back Video scroll opacity
 
-
-window.addEventListener('scroll', function() {  
-    let background = document.getElementById("back-video");
-    let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
-    background.style.opacity = 1 - scrollTop / 500;
-})
+// window.addEventListener('scroll', function() {  
+//     let background = document.getElementById("back-video");
+//     let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
+//     background.style.opacity = 1 - scrollTop / 500;
+// })
 
