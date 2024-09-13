@@ -438,6 +438,8 @@ h4:hover {
 
                                     /* Slide in Animations */
 
+                                    /* slide in from right */
+
 .slideIn-animation {
     transform: translateX(400%);
     transition: transform 1s cubic-bezier(0.5, 0.885, 0.32, 1);
@@ -453,6 +455,39 @@ h4:hover {
    transform: translateX(0);
    animation: slideIn .5s linear;
 }
+
+
+                                        /* slide in from left */
+
+
+.slideIn-animation-left {
+    transform: translateX(-400%);
+    transition: transform 1s cubic-bezier(0.5, 0.885, 0.32, 1);
+}
+
+#slideIn-animation-left:nth-of-type(odd) {
+   transform: translateX(400%);
+}
+
+
+.slideIn-animation-left.show {
+   transform: translateX(0);
+   animation: slideIn .5s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 @keyframes slideIn {

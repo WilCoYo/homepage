@@ -47,25 +47,60 @@ function sleep(ms) {
                                                 // Slide In Animations
 
 
-const slidingElements = document.querySelectorAll(".slideIn-animation");
+                                                //Slide In From Right
 
 
+// const slidingElements = document.querySelectorAll(".slideIn-animation");
+
+
+
+// function checkBoxes() {
+//     const triggerBottom = window.innerHeight / 5 * 4;
+
+//     slidingElements.forEach(el => {
+//         const boxTop = el.getBoundingClientRect().top;
+
+//         if(boxTop < triggerBottom) {
+//             el.classList.add('show');
+//         } else {
+//             el.classList.remove('show');
+//         }
+//     });
+// }
+// window.addEventListener('scroll', checkBoxes);
+// window.addEventListener('load', checkBoxes);
+
+
+
+
+
+                                    // Slide In From Right and Left
+const slidingElementsRight = document.querySelectorAll(".slideIn-animation");
+const slidingElementsLeft = document.querySelectorAll(".slideIn-animation-left");
 
 function checkBoxes() {
     const triggerBottom = window.innerHeight / 5 * 4;
 
-    slidingElements.forEach(el => {
+    function checkElement(el) {
         const boxTop = el.getBoundingClientRect().top;
 
-        if(boxTop < triggerBottom) {
+        if (boxTop < triggerBottom) {
             el.classList.add('show');
         } else {
             el.classList.remove('show');
         }
-    });
+    }
+
+    slidingElementsRight.forEach(checkElement);
+    slidingElementsLeft.forEach(checkElement);
 }
+
 window.addEventListener('scroll', checkBoxes);
 window.addEventListener('load', checkBoxes);
+
+
+                                               
+
 
 
 
