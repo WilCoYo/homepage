@@ -27,8 +27,6 @@ body {
     
 }
 
-
-
                                         /* Preloader Screen */
 #preloader {
     position: fixed;
@@ -78,10 +76,11 @@ body {
     width: 16rem;
     height: 100vh;
     background-color: white;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     /* padding: .5rem; */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     box-sizing: border-box;
+    z-index: 1050;
 }
 
 
@@ -388,6 +387,7 @@ h4:hover {
     grid-template-columns:.75fr 1.25fr;
     min-height: 100vh;
     margin-left: 16rem;
+    z-index: 100;
     overflow: hidden;
 }
 
@@ -395,6 +395,7 @@ h4:hover {
     display:flexbox;
     align-content: center;
     text-align: center;
+    z-index: 100;
 }
 
 
@@ -404,7 +405,8 @@ h4:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.25);
     border-radius: 50%;
     border: none;
-    outline: .1rem solid red;
+    z-index: 100;
+
 }
 
 
@@ -792,8 +794,8 @@ animation: blink 1s linear infinite;
 
 
 @media only screen and (max-width: 37.5rem) {
-    
-  
+
+
 
     .sidebar-navigation {
         position: fixed;
@@ -802,11 +804,11 @@ animation: blink 1s linear infinite;
         width: 100%;
         height: auto; 
         min-height: 4rem; 
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.5);
         padding: 0.5rem;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         box-sizing: border-box;
-        z-index: 100;
+        z-index: 1000;
     }
 
 
@@ -911,13 +913,11 @@ animation: blink 1s linear infinite;
         min-height: 100vh;
         margin: 10% auto;
         padding-top: 9rem;
-        z-index: 10;
     }
 
     .about-me-right {
         margin: 5% 5% 0 5%;
         padding: 0 5% 0 5%;
-    
     }
 
     .about-me-right h2 {
@@ -927,7 +927,6 @@ animation: blink 1s linear infinite;
 
     .self-portrait {
         padding: 0;
-        
     }
 
 
@@ -970,6 +969,22 @@ animation: blink 1s linear infinite;
     }
     
 
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        
+        width: auto;
+        height: 100%;
+    }
 }
 
 

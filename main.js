@@ -90,11 +90,9 @@ window.addEventListener("load", function() {
 
 
 
-// window.addEventListener('scroll', function() {  
-//     let background = document.getElementById("back-video");
-//     let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
-//     background.style.opacity = 1 - scrollTop / 500;
-// })
-
-
+window.addEventListener('scroll', function() {  
+    let background = document.getElementById("back-video");
+    let scrollTop = window.scrollY || this.document.documentElement.scrollTop;
+    background.style.opacity = 1 - scrollTop / 500;
+})
 
