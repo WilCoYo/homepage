@@ -474,7 +474,7 @@ h4:hover {
 
 .slideIn-animation.show {
    transform: translateX(0);
-   animation: slideIn .5s linear;
+   animation: fadeIn .75s ease-in;
 }
 
 
@@ -493,25 +493,17 @@ h4:hover {
 
 .slideIn-animation-left.show {
    transform: translateX(0);
-   animation: slideIn .5s linear;
+   animation: fadeIn .75s ease-in;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* Fade In Animation For Slide In Effects */
 
     
-@keyframes slideIn {
+@keyframes fadeIn {
     0% {
         opacity: 1;
     }
@@ -531,9 +523,8 @@ h4:hover {
 .experience-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
     padding: 1rem;
-    margin-left: 12rem;
+    margin-left: 16rem;
     justify-content: center;
    
 }
@@ -683,6 +674,7 @@ h4:hover {
 
 .skill-chart {
     display: block;
+    max-height: fit-content;
     bottom : 2rem;
     width: 80%;
     background-color: #ffffffe3;
@@ -704,11 +696,12 @@ h4:hover {
 
 .skill-chart ul {
     list-style: none;
+    max-height:fit-content;
 }
 
 .headers {
     display: flex;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     width: 100%;
 }
 
@@ -867,9 +860,9 @@ animation: blink 1s linear infinite;
     }
 }
 
+                                        /* Tablet Portait */
 
-
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 64.5rem) {
 
 
 
@@ -891,6 +884,10 @@ animation: blink 1s linear infinite;
 
     .desktop {
         display: none;
+    }
+
+    .header-name {
+        font-size: 2em;
     }
 
     .nav-list {
@@ -919,6 +916,7 @@ animation: blink 1s linear infinite;
     #nav3, #nav4,
     #nav5 {
     display: flex;
+    font-size: 3rem;
     }
 
 
@@ -944,16 +942,19 @@ animation: blink 1s linear infinite;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 6rem;
         margin-bottom: 0;
         transition: 0.5s;
         text-align: center;
     }
 
+
+
+                                                /* Social Icons  */
  
     .social-icons {
         position:absolute;
-        bottom:0;
+        bottom: 1rem;
         /* transform:translate(20%, 100%); */
         margin:0;
         padding:0;
@@ -971,7 +972,7 @@ animation: blink 1s linear infinite;
         font-size:2rem;
         text-align:center;
         text-decoration:none;
-        color:#fff;
+        color:#4C5130;
         margin: .5rem .75rem;
         padding: .25rem;
         transition:.5s;
@@ -981,8 +982,13 @@ animation: blink 1s linear infinite;
       .social-icons li a span:nth-child(2),
       .social-icons li a span:nth-child(3),
       .social-icons li a span:nth-child(4) {
-        background-color: #fff;
+        background-color: #4C5130;
       }
+
+
+
+
+                                            /* About Me  Section*/
 
     .about-me {
         display: block;
@@ -992,7 +998,7 @@ animation: blink 1s linear infinite;
     }
 
     .about-me-right {
-        margin: 5% 5% 0 5%;
+        margin: 2% 5% 0 5%;
         padding: 0 5% 0 5%;
     }
 
@@ -1001,17 +1007,20 @@ animation: blink 1s linear infinite;
         text-align: center;
     }
 
+    .about-me-right p {
+        font-size: 1.5rem;
+    }
+
     .self-portrait {
+        width: 50%;
         padding: 0;
     }
 
 
     .experience-section {
-        display: block;
-        
         margin: 0;
         padding: 9rem 0 0 0;
-        width: 100%;
+
     }    
     
 
@@ -1019,31 +1028,45 @@ animation: blink 1s linear infinite;
   
 
 
-    .skill-chart {
+    /* .skill-chart {
         display: block;
         bottom : 2rem;
         background-color: #ffffffe3;
         margin: 0;
         border-radius: 2rem;
         padding: 0;
+    } */
+
+    .skill-chart {
+        display: block;
+        bottom : 2rem;
+        background-color: #ffffffe3;
+        margin: 0;
+        border-radius: 2rem;
+        padding: 1rem;
     }
 
    
-    .skill-chart ul {
+    /* .skill-chart ul {
         padding: 0;
-    }
+    } */
 
-    .skills {
+    /* .skills {
         width: 100%;
         padding: 0 2rem 0 0;
-    }
+    } */
 
    
 
-    .total-xp {
+    /* .total-xp {
         visibility: hidden;
-    }
+    } */
     
+
+    .skills-title {
+     
+        width: 30%;
+    }
 
 }
 
@@ -1062,6 +1085,57 @@ animation: blink 1s linear infinite;
         height: 100%;
     }
 }
+
+
+
+
+                                        /* Tablet Landscape Media Queries */
+
+
+@media only screen and (max-width: 85.5rem) {
+
+
+.about-me {
+    display: block;
+    
+}
+
+.self-portrait {
+    margin-top: 1rem;
+    width: 40%;
+}
+
+    
+.experience-section {
+    display: block;
+}
+
+
+.codecademy-cert li {
+    text-align: start;
+}
+
+
+.skill-chart {
+    width: 100%;
+}
+
+.bottom-left-inside {
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 #preloader {
