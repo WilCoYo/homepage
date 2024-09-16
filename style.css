@@ -541,6 +541,7 @@ h4:hover {
     gap: .5rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
+    margin-top: 3rem;
     margin-left: 16rem;
     justify-content: center;
 }
@@ -591,6 +592,7 @@ h4:hover {
 
 .experiences ul {
     font-size: .75rem;
+    /* padding: 0; */
 }
 
 .certifications {
