@@ -419,6 +419,16 @@ h4:hover {
     margin-left: 16rem;
     z-index: 100;
     overflow: hidden;
+    
+    color:  white;
+
+    /* other styles */
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 
 .about-me-left {
@@ -448,7 +458,7 @@ h4:hover {
     align-self: center;
     margin: 1rem;
     padding: 5%;
-    background-color: #fff;
+   
     border-radius: 5rem;
 }
 
