@@ -1336,6 +1336,10 @@ animation: blink 1s linear infinite;
     
 }
 
+.project-section {
+    padding-top: 9rem;
+}
+
 
 .projects {
     display: block;
