@@ -580,17 +580,32 @@ h4:hover {
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 
+.experiences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: start;
+    padding: 1rem 3rem 1rem 3rem;
+    line-height: 2rem;
+}
+
+.experiences ul {
+    font-size: .75rem;
+}
+
 .certifications {
     display: flex;
+    width: 100%;
 }
 
 .certifications ul {
     line-height: 1.75rem;
+    padding: 0;
 }
 
 .codecademy-logo {
-    width: 15%;
-    margin-top: 1.95rem;
+    width: 50%;
+    padding-top: 3.25rem;
 }
 
 .codecademy-logo:hover {
@@ -598,7 +613,8 @@ h4:hover {
 }
 
 .codecademy-cert {
-    width: 25%;
+    display: block;
+    width: 50%;
     
 }
 
@@ -613,6 +629,10 @@ h4:hover {
     width: 50%;
 }
 
+.americorps ul {
+
+}
+
 
 .americorps li {
     text-align: start;
@@ -622,7 +642,7 @@ h4:hover {
 
 
 .nccc-logo {
-    width: 10%;
+    width: 20%;
     margin-top: 1rem;
     padding-right: 1rem;
 }
@@ -632,7 +652,7 @@ h4:hover {
 }
 
 .cityyear-logo {
-    width: 12%;
+    width: 23%;
     padding-left: 1rem;
 }
 
@@ -646,17 +666,7 @@ h4:hover {
 
 
 
-.experiences {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: start;
-    padding: 1rem 3rem 3rem 3rem;
-    line-height: 2rem;
-}
 
-.experiences ul {
-    font-size: .75rem;
-}
 
 
                                         /* Tech Stack List */
@@ -675,9 +685,9 @@ h4:hover {
     width: 100%;
     font-size: 1.5rem;
     justify-content: space-between;
-    line-height: 4rem;
+    /* line-height: 4rem; */
     border-radius: 2rem;
-    padding: 1rem 3rem;
+    padding: 0rem 3rem;
     /* margin: 1rem 4rem; */
     margin-bottom: 1rem;
     color:  white;
@@ -701,7 +711,7 @@ h4:hover {
 .bottom-left li {
     display: flex;
     align-items: center;
-  
+    padding-bottom: 1rem;
 }
 
 .bottom-left svg {
@@ -714,16 +724,14 @@ h4:hover {
 
                                             /* Skill Chart */
 
+#skill-chart {
+}
 
 .skill-chart {
     display: block;
-    max-height: fit-content;
-    bottom : 2rem;
     width: 100%;
-    margin-top: 1rem auto;
-    border-radius: 2rem;
     padding: 1rem;
-
+    height: 87%;
     color:  white;
 
     border-radius: 20px;
@@ -744,7 +752,6 @@ h4:hover {
 }
 
 #skill-chart {
-    margin: auto 0;
 }
 
 .skill-chart ul {
