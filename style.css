@@ -738,7 +738,9 @@ h4:hover {
     width: 30%;
 }
 
-
+#skill-chart {
+    margin: auto 0;
+}
 
 .skill-chart ul {
     list-style: none;
@@ -1018,7 +1020,7 @@ animation: blink 1s linear infinite;
         width: 100%;
         height: auto; 
         min-height: 4rem; 
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255);
         padding: 0.5rem;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         box-sizing: border-box;
@@ -1316,8 +1318,8 @@ animation: blink 1s linear infinite;
 }
 
 .project {
-    width: 100%;
-    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
 }
 
 
