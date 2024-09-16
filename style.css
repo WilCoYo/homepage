@@ -534,6 +534,8 @@ h4:hover {
     display: flex;
     justify-content: center;
     text-align: center;
+
+    
 }
 
 
@@ -549,7 +551,17 @@ h4:hover {
     border-radius: 2rem;
     box-shadow: 0px 0px 5px grey;
     margin-bottom: 1rem;
-    background-color: #ffffffe3;
+
+    color:  white;
+
+    border-radius: 20px;
+    /* other styles */
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 
 .certifications {
@@ -633,6 +645,8 @@ h4:hover {
 .bottom-left {
     display: flex;
     justify-content: center;
+
+    
 }
 
 .bottom-left-inside {
@@ -643,10 +657,19 @@ h4:hover {
     justify-content: space-between;
     line-height: 4rem;
     border-radius: 2rem;
-    box-shadow: 0px 0px 5px grey;
     padding: 1rem 3rem;
-    background-color: #ffffffe3;
     margin: 1rem 4rem;
+
+    color:  white;
+
+    border-radius: 20px;
+    /* other styles */
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 
 .bottom-left ul {
@@ -677,18 +700,26 @@ h4:hover {
     max-height: fit-content;
     bottom : 2rem;
     width: 80%;
-    background-color: #ffffffe3;
     margin-top: 1rem auto;
     border-radius: 2rem;
     padding: 1rem;
-    box-shadow: 0px 0px 5px grey;
+
+    color:  white;
+
+    border-radius: 20px;
+    /* other styles */
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    
 }
 
 .skills-title {
-    border-bottom: #8f8f8f 1px solid;
     font-weight: bold;
     font-size: 1.5rem;
-  
     width: 40%;
 }
 
@@ -724,6 +755,9 @@ h4:hover {
     display: flex;
 }
 
+.headers{
+    border-bottom: #8f8f8f 1px solid; 
+}
 .bar-chart-header {
     display: flex;
     justify-content: space-evenly;
@@ -731,7 +765,7 @@ h4:hover {
     align-items: end;
     margin: 0;
     padding: 0;
-    border-bottom: #8f8f8f 1px solid;
+   
 }
 
 .bar-chart-header li {
