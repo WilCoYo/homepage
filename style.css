@@ -543,6 +543,7 @@ h4:hover {
     padding: 1rem;
     margin-left: 16rem;
     justify-content: center;
+    height: 100vh;
 }
 
 
@@ -559,9 +560,9 @@ h4:hover {
 
 
 .right-side {
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3; 
     width: 100%;
     
     border-radius: 2rem;
