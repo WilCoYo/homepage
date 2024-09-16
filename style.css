@@ -1221,6 +1221,39 @@ animation: blink 1s linear infinite;
   
     }
 
+
+.certifications {
+    display: block;
+}
+
+.codecademy-cert {
+    width: 100%;
+}
+
+.americorps {
+    width: 100%;
+}
+
+.experiences {
+    padding: 0 .25rem;
+}
+
+.skills-title {
+    width: 50%;
+}
+
+.skills ul {
+    padding: 0;
+}
+
+.total-xp {
+    display: none;
+}
+
+.bottom-left-inside {
+    padding: 0;
+}
+
 }
 
 
