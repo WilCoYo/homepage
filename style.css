@@ -164,9 +164,18 @@ body {
     padding-left: .35rem !important;
     padding-right: .35rem !important;
     height: 1.5rem !important;
-    color: white;
-    background-color: #4C5130;
-    opacity: 0;
+
+    color:  white;
+
+    
+    /* other styles */
+    background: rgba(39, 39, 39, 0.336);
+    backdrop-filter: blur(60px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+
     transition: opacity 300ms, transform 300ms;
   }
 
@@ -532,6 +541,7 @@ h4:hover {
 
 .experience-section {
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
     margin-left: 16rem;
@@ -556,7 +566,7 @@ h4:hover {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3; 
-
+    width: 100%;
     
     border-radius: 2rem;
     box-shadow: 0px 0px 5px grey;
@@ -576,7 +586,6 @@ h4:hover {
 
 .certifications {
     display: flex;
-    
 }
 
 .certifications ul {
@@ -655,7 +664,7 @@ h4:hover {
 .bottom-left {
     display: flex;
     justify-content: center;
-
+    width: 100%;
     
 }
 
@@ -668,8 +677,8 @@ h4:hover {
     line-height: 4rem;
     border-radius: 2rem;
     padding: 1rem 3rem;
-    margin: 1rem 4rem;
-
+    /* margin: 1rem 4rem; */
+    margin-bottom: 1rem;
     color:  white;
 
     border-radius: 20px;
@@ -709,7 +718,7 @@ h4:hover {
     display: block;
     max-height: fit-content;
     bottom : 2rem;
-    width: 80%;
+    width: 100%;
     margin-top: 1rem auto;
     border-radius: 2rem;
     padding: 1rem;
@@ -730,7 +739,7 @@ h4:hover {
 .skills-title {
     font-weight: bold;
     font-size: 1.5rem;
-    width: 40%;
+    width: 30%;
 }
 
 
