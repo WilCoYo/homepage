@@ -1256,9 +1256,17 @@ animation: blink 1s linear infinite;
     display: none;
 }
 
+.bottom-left-inside {
+    padding: 0;
+}
+
+.bottom-left-inside li {
+    padding-bottom: .5rem;
+}
+
 .bottom-left-inside span {
     display: none;
-    padding: 0;
+    
 }
 
 }
