@@ -1031,9 +1031,9 @@ animation: blink 1s linear infinite;
     .hero-section {
         display: flex;
         grid-column: 1;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
         min-height: 100vh;
         /* padding: 2rem; */
         box-sizing: border-box;
@@ -1048,13 +1048,14 @@ animation: blink 1s linear infinite;
 
 
 
+
                                                 /* Social Icons  */
  
     .social-icons {
         position:absolute;
         bottom: 1rem;
         /* transform:translate(20%, 100%); */
-        margin:0;
+        margin: 0;
         padding:0;
         display:flex !important;
         z-index: 15;
@@ -1188,9 +1189,22 @@ animation: blink 1s linear infinite;
                               
 @media only screen and (max-width: 27.19rem) {
 
+.sidebar-navigation {
+    font-size: .75rem;
+}
+
 .hero-section h1 {
     font-size: 4rem;
 }
+
+
+#nav1, #nav2,
+    #nav3, #nav4,
+    #nav5 {
+    font-size: 1.5rem;
+    }
+
+
 
 }
 
