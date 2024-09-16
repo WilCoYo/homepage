@@ -538,7 +538,7 @@ h4:hover {
 
 .experience-section {
     display: grid;
-    gap: 1rem;
+    gap: .5rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
     margin-left: 16rem;
@@ -661,7 +661,9 @@ h4:hover {
 }
 
 
-
+.code-ninjas {
+    /* padding-top: 3rem; */
+}
 
 
 
@@ -1305,6 +1307,11 @@ animation: blink 1s linear infinite;
 
 .certifications {
     display: block;
+    text-align: center;
+}
+
+.certifications ul {
+    padding-left: 2.5rem;   
 }
 
 .codecademy-cert {
@@ -1316,6 +1323,7 @@ animation: blink 1s linear infinite;
 }
 
 .experiences {
+    display: block;
     padding: 0 .25rem 0 .75rem;
 }
 
