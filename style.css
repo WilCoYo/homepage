@@ -1261,7 +1261,7 @@ animation: blink 1s linear infinite;
 }
 
 .bottom-left-inside li {
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 .bottom-left-inside span {
