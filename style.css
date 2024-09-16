@@ -872,6 +872,7 @@ h4:hover {
     justify-content: center;
     align-content: center;
     width: 30%;
+    text-decoration: none;
     border-radius: 1.5rem;
     /* other styles */
     background: rgba(39, 39, 39, 0.1);
@@ -892,6 +893,13 @@ h4:hover {
     justify-content: center;
     align-content: center;
     padding: 1rem;
+    text-align: center;
+}
+.project section {
+    align-self: center;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 
