@@ -1220,12 +1220,16 @@ animation: blink 1s linear infinite;
     #nav3, #nav4,
     #nav5 {
     font-size: 1.5rem;
-    }
+}
 
 .social-icons { 
     bottom: 6rem;
   
-    }
+}
+
+.about-me-right p {
+    font-size: 1rem;
+}
 
 
 .certifications {
