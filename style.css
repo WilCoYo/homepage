@@ -481,17 +481,20 @@ h4:hover {
                                     /* slide in from right */
 
 .slideIn-animation {
+    -webkit-transform: translateX(400%);
     transform: translateX(400%);
     transition: transform 1s cubic-bezier(0.5, 0.885, 0.32, 1);
 }
 
 #slideIn-animation:nth-of-type(odd) {
-   transform: translateX(-400%);
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
 }
 
 
 
 .slideIn-animation.show {
+    -webkit-transform: translateX(0);
    transform: translateX(0);
    animation: fadeIn .75s ease-in;
 }
@@ -501,16 +504,19 @@ h4:hover {
 
 
 .slideIn-animation-left {
+    -webkit-transform: translateX(-400%);
     transform: translateX(-400%);
     transition: transform 1s cubic-bezier(0.5, 0.885, 0.32, 1);
 }
 
 #slideIn-animation-left:nth-of-type(odd) {
+    -webkit-transform: translateX(400%);
    transform: translateX(400%);
 }
 
 
 .slideIn-animation-left.show {
+    -webkit-transform: translateX(0);
    transform: translateX(0);
    animation: fadeIn .75s ease-in;
 }
