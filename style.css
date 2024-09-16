@@ -1194,7 +1194,7 @@ animation: blink 1s linear infinite;
 }
 
 .hero-section h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 
@@ -1204,7 +1204,10 @@ animation: blink 1s linear infinite;
     font-size: 1.5rem;
     }
 
-
+.social-icons { 
+    bottom: 4rem;
+  
+    }
 
 }
 
