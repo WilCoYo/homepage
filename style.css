@@ -1227,6 +1227,12 @@ animation: blink 1s linear infinite;
   
 }
 
+.about-me {
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .about-me-right p {
     font-size: 1rem;
 }
