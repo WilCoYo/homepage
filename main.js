@@ -4,7 +4,7 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  const phrases = ["Web Developer", "Full-Stack Engineer"];
+  const phrases = ["Web Developer", "Full-Stack Engineer", "Software Engineer"];
   const el = document.getElementById("typeWriter");
 
   let sleepTime = 100;
